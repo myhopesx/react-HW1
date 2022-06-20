@@ -1,4 +1,8 @@
 const Cat = ({ image, name, age }) => {
+  if (name === "") {
+    name = "Write name!";
+  }
+
   return (
     <div className="card">
       <img src={image} alt="cat" />
